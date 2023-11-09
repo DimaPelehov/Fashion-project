@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+$pt-serif: "PT Serif";
+$pt-sans: "PT Sans";
+$hk-grotesk: "Hanken Grotesk";
+
+body {
+  .container {
+    max-width: 1366px;
+    margin: auto;
+  }
+}
+
+.first-h3 {
+  font-family: $pt-sans;
+}
+
+.font-fam-sans {
+  font-family: $pt-sans;
+}
+
+// navbar
+.navbar {
+  padding: 34px;
+  font-family: $pt-serif;
+
+  h1 {
+    letter-spacing: 2.5px;
+  }
+
+  ul {
+    gap: 30px;
+
+    a:hover {
+      color: #c9a96e;
+    }
+  }
+}
+
+.logo-background {
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  bottom: 7px;
+  background-color: #c9a96e;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+// hero
+.hero-content {
+  width: 100%;
+  color: white;
+  bottom: 0;
+  height: 200px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.65) 100%
+  );
+  padding: 20px 0px 40px 150px;
+  font-family: $pt-serif;
+}
+
+.hero-content-row {
+  margin-top: 4px;
+}
+
+// base-information
+.base-information {
+  padding: 60px 150px;
+}
+
+// post-one
+.post-one {
+  margin-bottom: 50px;
+}
+
+.post-one-item {
+  flex: 1 1 calc(50% - 30px);
+  cursor: pointer;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-one-content {
+  padding: 15px;
+  font-family: $pt-serif;
+}
+
+// post-two
+
+.post-two {
+  cursor: pointer;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-two-content {
+  padding: 25px 30px;
+  font-family: $pt-serif;
+}
+
+// pagination
+.pagination {
+  padding: 18px 39px;
+  font-family: $hk-grotesk;
+
+  h2:hover {
+    color: black;
+  }
+
+  ul {
+    margin: 0px 30px;
+  }
+}
+
+.pagination-arrow {
+  width: 5px;
+  height: 8px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.pa-left {
+  margin-right: 10px;
+  background-image: url(images/left-grey-arrow.svg);
+}
+.pa-right {
+  margin-left: 10px;
+  background-image: url(images/right-grey-arrow.svg);
+}
+
+// sidebar
+
+.sidebar-title {
+  padding: 10px 55px;
+  font-family: $pt-serif;
+  border: 1px solid #e5e5e5;
+}
+
+.author-card {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  font-family: $pt-serif;
+  margin-bottom: 50px;
+
+  img {
+    margin: 20px 0px;
+  }
+
+  p {
+    padding: 12px 18px;
+  }
+
+  h4 {
+    padding: 12px 0px;
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+  }
+}
+
+.featured {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.feat-item {
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.feat-content {
+  font-family: $pt-serif;
+  padding: 15px 0px;
+}
+
+.categories {
+  margin-bottom: 50px;
+}
+
+.categories-item {
+  padding: 15px 0px;
+  font-family: $pt-serif;
+  border-bottom: 1px solid #e5e5e5;
+
+  h2 {
+    cursor: pointer;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.social {
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.social-item {
+  padding: 13px 0px;
+  flex: 1 1 calc(33% - 3px);
+  background-color: #f8f9fa;
+}
+
+.soc-logo {
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url(images/facebook-logo.svg);
+}
+.pinterest {
+  background-image: url(images/pinterest-logo.svg);
+}
+.vimeo {
+  background-image: url(images/vimeo-logo.svg);
+}
+.dribbble {
+  background-image: url(images/dribbble-logo.svg);
+}
+.twiter {
+  background-image: url(images/twitter-logo.svg);
+}
+.behanse {
+  background-image: url(images/behance-logo.svg);
+}
+.instagram {
+  background-image: url(images/instagram-logo.svg);
+}
+.youtube {
+  background-image: url(images/youtube-logo.svg);
+}
+.google {
+  background-image: url(images/google-logo.svg);
+  width: 22px;
+}
+
+.tags {
+  padding-top: 20px;
+  font-family: $pt-serif;
+}
+
+.tags-item {
+  padding: 6px 14px;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.follow-our {
+  padding: 0px 20px;
+  font-family: $pt-serif;
+  margin-bottom: 60px;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+}
+
+.follow-picture {
+  flex: 1 1 calc(16.67% - 20px);
+}
+
+// footer
+footer {
+  ul {
+    margin-bottom: 29px;
+  }
+}
+
+.foot-logo {
+  margin-bottom: 60px;
+}
+
+.foot-social {
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.fs-one {
+  background-image: url(images/facebook-logo.svg);
+}
+.fs-two {
+  background-image: url(images/twitter-logo.svg);
+}
+.fs-three {
+  background-image: url(images/pinterest-logo.svg);
+}
+.fs-fourth {
+  background-image: url(images/google-logo.svg);
+}
+.fs-fifth {
+  background-image: url(images/behance-logo.svg);
+}
+.fs-six {
+  background-image: url(images/instagram-logo.svg);
+}
+
+.foot-social:hover {
+  border: none;
+  background-color: #c9a96e;
+}
+
+.fs-one:hover {
+  background-image: url(images/facebook-white.svg);
+}
+.fs-two:hover {
+  background-image: url(images/twitter-white.svg);
+}
+.fs-three:hover {
+  background-image: url(images/pinterest-white.svg);
+}
+.fs-fourth:hover {
+  background-image: url(images/google-white.svg);
+}
+.fs-fifth:hover {
+  background-image: url(images/behance-white.svg);
+}
+.fs-six:hover {
+  background-image: url(images/instagram-white.svg);
+}
+
+.finish {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
